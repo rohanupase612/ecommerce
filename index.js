@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("assets"));
 
 // mongoose.connect("mongodb://localhost:27017/ecommerce");
-mongoose.connect("mongodb+srv://Shree:Shree@123@cluster0.1w4w7.mongodb.net/test");
+mongoose.connect("mongodb+srv://Shree:Shree@123@cluster0.1w4w7.mongodb.net/ecommerce");
 const db = mongoose.connection;
 db.on("error", error => {
     console.log(error);
