@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({limit:'50mb', extended: true}));
 app.use(express.json());
 app.use(express.static("assets"));
 
-mongoose.connect("mongodb+srv://Shree:Shree@123@cluster0.1w4w7.mongodb.net/ecommerce");
+mongoose.connect("mongodb+srv://Shree:Shree123@cluster0.1w4w7.mongodb.net/ecommerce");
 
 const db = mongoose.connection;
 db.on("error", error => {
